@@ -330,6 +330,10 @@ extension AVPlayerWrapper: AVPlayerItemNotificationObserverDelegate {
     func itemDidPlayToEndTime() {
         delegate?.AVWrapperItemDidPlayToEndTime()
     }
+
+    func playbackStalled() {
+        delegate?.AVWrapperPlaybackStalled()
+    }
     
 }
 
